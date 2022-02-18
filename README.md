@@ -1,1 +1,1 @@
-https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/git-markdown.md
+https://valeriana321.github.io/rsschool-cv/cv
