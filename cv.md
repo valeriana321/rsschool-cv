@@ -1,5 +1,3 @@
-### rs-school-cv
---------------
 # Karpenko Valeria
 ______________
 * Contacts
