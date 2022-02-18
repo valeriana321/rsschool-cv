@@ -35,5 +35,5 @@ ______________
     + HTML Academy
     + JavaScript Begginig Hexlet
 * Langeuges
-    + Russian: Naitiv
+    + Russian: Naitive
     + English: C1
