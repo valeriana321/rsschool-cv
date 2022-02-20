@@ -1,15 +1,49 @@
+main{
+    width: 550px;
+}
+
+.container{
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+.page-header{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 350px;
+    grid-template-areas: "avatar name"
+                         "avatar position";
+                         
+}
+
+.avatar-img{
+    grid-area: avatar;
+    border-radius: 50%;
+}
+
+.name{
+    grid-area: name;
+}
+
+.position{
+    grid-area: position;
+}
+
+.container-footer{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
 .page-footer{
     min-height: 50px;
-    padding: 20px;  
-    font-size: 14px;   
+    padding: 20px;      
+    text-align: center;
+    line-height: 40px;
+    color: #fff;  
 }
 
 .year{
     font-size: 20px;
-}
-
-.container{
-    display: flex;
-    padding: 5px;
-    width: 1280px;
 }
