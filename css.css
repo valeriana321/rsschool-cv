@@ -1,33 +1,36 @@
-main{
-    width: 550px;
+body{
+font-family: "Helvetica Neue",Helvetica,Tahoma,sans-serif;
+font-size: 1em;
+line-height: 1.65em;
+background: #fff;
+color: #222;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
 }
 
-.container{
-    width: 800px;
-    margin-right: auto;
-    margin-left: auto;
+.container{    
+    max-width: 662px;
+    margin:auto; 
+    padding: 0 20px;      
     }
-
-.page-header{
-    margin: auto;
-    display: grid;
-    grid-template-columns: 200px 350px;
-    grid-template-areas: "avatar name"
-                         "avatar position";
-                         
+ 
+.main-nav{        
+    padding-top: 23px;
+    background: #f4f4f4;
+    height: 54px;
+    margin: auto;        
+}
+nav ul{
+    display: flex;
+    margin-bottom: auto;
+    gap: 10px;
+    justify-content: center;
 }
 
 .avatar-img{
-    grid-area: avatar;
     border-radius: 50%;
-}
-
-.name{
-    grid-area: name;
-}
-
-.position{
-    grid-area: position;
 }
 
 .container-footer{
@@ -46,4 +49,8 @@ main{
 
 .year{
     font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
 }
