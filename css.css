@@ -1,7 +1,6 @@
 body{
-font-family: "Helvetica Neue",Helvetica,Tahoma,sans-serif;
-font-size: 1em;
-line-height: 1.65em;
+font-family: 'Montserrat', sans-serif;
+line-height: 1.75em;
 background: #fff;
 color: #222;
 margin: 0;
@@ -10,31 +9,39 @@ border: 0;
 outline: 0;
 }
 
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+}
+
 .container{    
     max-width: 662px;
-    margin:auto; 
+    margin: 0 auto; 
     padding: 0 20px;      
     }
  
 .main-nav{        
-    padding-top: 23px;
     background: #f4f4f4;
-    height: 54px;
-    margin: auto;        
+    height: 55px;
+    padding-top: 1px; 
+              
 }
 
-.container, .main-nav{
-    padding-bottom: 25px;
-}
 nav ul{
-    display: flex;
-    margin-bottom: auto;
-    gap: 30px;
-    justify-content: center;
+    display: flex;    
+    gap: 90px;
+    }
+a{
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
 }
 
 .intro{
-    padding: 50px 0px 70px 0px;
+    padding: 57px 0px 20px 0px;
     background-image:url("frontend.jpg");
     background-position: center -50%;
     background-repeat: no-repeat;
@@ -48,24 +55,80 @@ nav ul{
 }
 .avatar-img{
     border-radius: 50%;
+    width: 80px;
     grid-area: avatar;
     align-self: start;
-    margin: auto;
+    margin: auto 0;
 }
 .name{
     grid-area: name;
     align-self: flex-end;
     font-family: 'Playfair Display', serif;
     font-size:  40pt;
+    margin: auto 0;
     }
-.flex-container{
-    display: flex;
-}
 
+.grid-container{    
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 100px;
+    grid-template-areas: "education contacts"
+                         "skills code"
+                         "lang code";
+    }
+
+    .education{
+        grid-area: education;
+        
+    }
+
+    .skills{
+        grid-area: skills;
+    }
+
+    .contacts{
+        grid-area: contacts;
+    }
+
+    .code{
+        grid-area: code;
+        margin-bottom: -50px;
+    }
+
+    .lang{
+        grid-area: lang;
+        
+    }
+.projects{    
+    background-image: url("van-gogh.jpg");
+    background-repeat: repeat-x; 
+    text-align: center;     
+    }
+
+    .container-button{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+.project-button{
+    font-family: 'Playfair Display', serif;
+    border: solid 5px white;
+    padding: 20px 50px;    
+    color: white;
+     font-size: 40pt;   
+          
+    }
+
+.project-button:hover{
+    color: white;
+}
 .container-footer{
-    
+    padding-top: 80px;    
     display: flex;
     justify-content: space-between;
+
 }
 
 .page-footer{
@@ -82,4 +145,11 @@ nav ul{
 
 ul{
     list-style-type: none;
+}
+
+li{
+    margin-left: -36px;
+}
+.container::after{
+    background: url("separator.png") no-repeat;
 }

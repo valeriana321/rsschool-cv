@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
         rel="stylesheet">
+
     <title>Valeria Karpenko CV</title>
 </head>
 
@@ -21,11 +23,11 @@
                 <header>
                     <nav>
                         <ul>
-                            <li>About me</li>
-                            <li>Education</li>
-                            <li>Skills</li>
-                            <li>Code</li>
-                            <li>Achivements</li>
+                            <li><a href="#About">About me</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#code">Code</a></li>
+                            <li><a href="#lang">Languages</a></li>
                         </ul>
 
                     </nav>
@@ -44,73 +46,93 @@
                     <img class="avatar-img" src="619539901.jpg" alt="photo" width="100">
                     <h1 class="name">Valeria Karpenko</h1>
                 </div>
+                <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum</p>
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
             </div>
         </div>
 
+        <!--main-information-->
         <div class="container">
-            <div class="flex-container">
-                <ul>
-                    <li>
+
+            <ul class="grid-container">
+
+                <li class="education" id="education">
+
+                    <ul>
                         <h2>Education</h2>
+                        <li>CS50, CS50x Web</li>
+                        <li>Hexlet JavaScript for begginers</li>
+                        <li>HTML Academy</li>
+                    </ul>
 
-                        <p>CS50, CS50x Web</p>
-                        <p>Hexlet JavaScript for begginers</p>
-                        <p>HTML Academy</p>
-                    </li>
+                </li>
 
-                    <li>
+                <li class="contacts" id="contacts">
 
+                    <ul>
                         <h2>Contacts</h2>
+                        <li>tel: +7(977)886-28-40</li>
+                        <li>e-mail: valeria.karpenko@gmail.com</li>
+                        <li>telegram: @valeriana321</li>
+                    </ul>
 
-                        <p>+7(977)886-28-40</p>
-                        <p>valeria.karpenko@gmail.com</p>
-                        <p>@valeriana321</p>
-                    </li>
-                    <li>
+                </li>
+                <li class="skills" id="skills">
 
-                        <h2>Scills</h2>
 
-                        <ul>
-                            <li>HTML, CSS</li>
-                            <li>JavaScript</li>
-                            <li>C, SQL</li>
-                            <li>Git</li>
-                            <li>Figma, Photoshop</li>
-                        </ul>
-                    </li>
-                    <li>
+                    <ul>
+                        <h2>Technical Skills</h2>
+                        <li>Git</li>
+                        <li>HTML, CSS</li>
+                        <li>JavaScript</li>
+                        <li>C, SQL</li>
+                        <li>Figma</li>
+                    </ul>
+
+                </li>
+                <li class="code" id="code">
+                    <ul>
+
                         <h2>Code example</h2>
-                        <code>function nicknameGenerator(name) {
-                        if (name.length < 4) {
-                          return "Error: Name too short";
-                        } else if ("aeiou".indexOf(name[2].toLowerCase()) != -1) {
-                          return name.slice(0, 4);
-                        } else {
-                          return name.slice(0, 3);
-                        }
-                      }</code>
-                    </li>
-                    <li>
-                        <nav>Projects</nav>
-                        <a>CV for rs_school</a>
-                    </li>
-                    <li>
-                        <nav>Languages</nav>
-                        <ul>
-                            <li>English: C1</li>
-                            <li>Russian: Naitive</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                        <pre> <code>
+function nick(name){
+if (name.length <= 3){
+return 'Error: Name too short';
+}
+let vowels = ["a","e","i","o","u"];
+if (vowels.indexOf(name[2]) != -1){
+return name.slice(0,4);
+}
+return name.slice(0,3);
+};
+                        </code></pre>
+                    </ul>
+                </li>
+                <li class="lang" id="lang">
 
+                    <ul>
+                        <h2>Languages</h2>
+                        <li>English: C1</li>
+                        <li>Russian: Naitive</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
     </main>
+    <!--my project-->
+
+    <div class="projects">
+        <div class="container-button">
+            <a class="project-button" href="https://valeriana321.github.io/rsschool-cv/cv">My projects</a>
+        </div>
+    </div>
+
+
+    <!--footer-->
     <footer>
         <div class="container">
             <div class="container-footer">
