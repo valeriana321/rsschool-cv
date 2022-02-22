@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap"
+        rel="stylesheet">
     <title>Valeria Karpenko CV</title>
 </head>
 
@@ -32,49 +36,56 @@
 
 
     <main>
-        <div>
-            <img class="avatar-img" src="619539901.jpg" alt="photo" width="100">
-            <h1 class="name">Valeria Karpenko</h1>
-            <p class="position">Junior Frontend Developer</p>
+        <!--Intro-->
+        <div class="intro" id="About">
+            <div class="container">
+                <p>Привет! Я пока только учусь и это моя первая работа. </p>
+                <div class=" info-container">
+                    <img class="avatar-img" src="619539901.jpg" alt="photo" width="100">
+                    <h1 class="name">Valeria Karpenko</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
         </div>
-        <ul>
-            <li>
-                <h2>Education</h2>
 
-                <p>CS50, CS50x Web</p>
-                <p>Hexlet JavaScript for begginers</p>
-                <p>HTML Academy</p>
-            </li>
-            <li>
-
-                <h2>About me</h2>
-
-                <p>I graduated from the Moscow Institute of Chemistry and after that worked at the Kurchatov
-                    Institute. I am interested in painting and jazz..</p>
-            </li>
-            <li>
-
-                <h2>Contacts</h2>
-
-                <p>+7(977)886-28-40</p>
-                <p>valeria.karpenko@gmail.com</p>
-                <p>@valeriana321</p>
-            </li>
-            <li>
-
-                <h2>Scills</h2>
-
+        <div class="container">
+            <div class="flex-container">
                 <ul>
-                    <li>HTML, CSS</li>
-                    <li>JavaScript</li>
-                    <li>C, SQL</li>
-                    <li>Git</li>
-                    <li>Figma, Photoshop</li>
-                </ul>
-            </li>
-            <li>
-                <h2>Code example</h2>
-                <code>function nicknameGenerator(name) {
+                    <li>
+                        <h2>Education</h2>
+
+                        <p>CS50, CS50x Web</p>
+                        <p>Hexlet JavaScript for begginers</p>
+                        <p>HTML Academy</p>
+                    </li>
+
+                    <li>
+
+                        <h2>Contacts</h2>
+
+                        <p>+7(977)886-28-40</p>
+                        <p>valeria.karpenko@gmail.com</p>
+                        <p>@valeriana321</p>
+                    </li>
+                    <li>
+
+                        <h2>Scills</h2>
+
+                        <ul>
+                            <li>HTML, CSS</li>
+                            <li>JavaScript</li>
+                            <li>C, SQL</li>
+                            <li>Git</li>
+                            <li>Figma, Photoshop</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Code example</h2>
+                        <code>function nicknameGenerator(name) {
                         if (name.length < 4) {
                           return "Error: Name too short";
                         } else if ("aeiou".indexOf(name[2].toLowerCase()) != -1) {
@@ -83,27 +94,30 @@
                           return name.slice(0, 3);
                         }
                       }</code>
-            </li>
-            <li>
-                <nav>Projects</nav>
-                <a>CV for rs_school</a>
-            </li>
-            <li>
-                <nav>Languages</nav>
-                <ul>
-                    <li>English: C1</li>
-                    <li>Russian: Naitive</li>
+                    </li>
+                    <li>
+                        <nav>Projects</nav>
+                        <a>CV for rs_school</a>
+                    </li>
+                    <li>
+                        <nav>Languages</nav>
+                        <ul>
+                            <li>English: C1</li>
+                            <li>Russian: Naitive</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
+            </div>
+        </div>
 
     </main>
     <footer>
-
-        <div class="container-footer">
-            <a href="https://github.com/valeriana321"><img src="github.png" alt="github-logo" height="50"></a>
-            <p class="year">2022</p>
-            <a href="https://rs.school/js/"><img src="rs.png" alt="rs_school-logo" height="50"></a>
+        <div class="container">
+            <div class="container-footer">
+                <a href="https://github.com/valeriana321"><img src="github.png" alt="github-logo" height="50"></a>
+                <p class="year">2022</p>
+                <a href="https://rs.school/js/"><img src="rs.png" alt="rs_school-logo" height="50"></a>
+            </div>
         </div>
     </footer>
 </body>

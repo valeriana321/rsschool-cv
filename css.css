@@ -22,15 +22,44 @@ outline: 0;
     height: 54px;
     margin: auto;        
 }
+
+.container, .main-nav{
+    padding-bottom: 25px;
+}
 nav ul{
     display: flex;
     margin-bottom: auto;
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
 }
 
+.intro{
+    padding: 50px 0px 70px 0px;
+    background-image:url("frontend.jpg");
+    background-position: center -50%;
+    background-repeat: no-repeat;
+}
+
+.info-container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "avatar name name";
+    
+}
 .avatar-img{
     border-radius: 50%;
+    grid-area: avatar;
+    align-self: start;
+    margin: auto;
+}
+.name{
+    grid-area: name;
+    align-self: flex-end;
+    font-family: 'Playfair Display', serif;
+    font-size:  40pt;
+    }
+.flex-container{
+    display: flex;
 }
 
 .container-footer{
